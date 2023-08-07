@@ -1,0 +1,26 @@
+				ASP.net MVC 
+
+MVC is a design pattern for web content developer
+
+Model View Controller
+
+Model (.cs File) - This is the data part of an application 
+		all the data related activities will happen here
+		select, insert, update, delete, filter, sort, calculate, validata, transactions, execute Stpred procs etc... 
+		(CRUD operations)
+		can use : ADO.net or entity framework 
+
+	
+		model / data could be, inmemory collection array or list, could be in xml/json/excel/csv file etc...or database in our case
+
+	
+		
+View (.cshtml file) - UI layer of application 
+			HTML, CSS, JS, bootstrap, jquery, images, videos etcc.....
+			we use Razor syntax - short hand html + css + js 
+
+Controller (.cs file) - collect data from view pass it to model
+			collect data from model pass it to view
+
+			besides that, take care of 
+			authentication, authorization, encryption, state management, security etc....

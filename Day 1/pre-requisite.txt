@@ -1,0 +1,26 @@
+Pre-requisite
+
+a. fundmantals of
+	databases - sql queries 
+	HTML,CSS, Javascript
+	OOPS fundemantals
+
+b. Software setup
+	Visual Studio 2022
+	SQL Server 2014 or sql express
+	GIT (to get the code and demonstration with notes from trainer)
+
+-------------
+Training goals
+
+be able to understand and implement
+	ASP.net MVC
+	ASP.net webapi 
+	ADO.net - advance concepts
+	Entity Framework
+
+---------
+Expectations - be on time
+	       be interactive
+	       complete task and assignments
+---------------------------------------------
