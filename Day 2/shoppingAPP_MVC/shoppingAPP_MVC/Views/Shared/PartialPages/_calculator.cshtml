@@ -1,0 +1,59 @@
+﻿<h1> Calulator </h1>
+
+
+<div style="background-color:indianred">
+<table>
+    <tr>
+        <td>
+        <input type="number" placeholder="Enter First Number" id="txtNum1" class="form-control"/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="number" placeholder="Enter Second Number" id="txtNum2" class="form-control" />
+        </td>
+    </tr>
+
+    <tr>
+        <td> <button class="btn btn-primary" id="btnCalculate" onclick="calculate()">Calculate</button> </td>
+        <td> <button class="btn btn-danger" id="btnClear">Clear</button> </td>
+    </tr>
+</table></div>
+
+
+
+<h4 id="addResult"> </h4>
+<h4 id="subResult"> </h4>
+<h4 id="divResult"> </h4>
+<h4 id="mulResult"> </h4>
+
+<script>
+    function calculate()
+    {
+        var num1 = $("#txtNum1").val();
+        var num2 = $("#txtNum2").val();
+
+        addition = parseInt(num1) + parseInt(num2);
+        subtraction = parseInt(num1) - parseInt(num2);
+        division = parseInt(num1) / parseInt(num2);
+        multiplication = parseInt(num1) * parseInt(num2);
+
+        $("#addResult").text("Add :" +addition);
+        $("#subResult").text("Sub :" + subtraction);
+        $("#divResult").text("Div :" + division);
+        $("#mulResult").text("Mul :" + multiplication);
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
