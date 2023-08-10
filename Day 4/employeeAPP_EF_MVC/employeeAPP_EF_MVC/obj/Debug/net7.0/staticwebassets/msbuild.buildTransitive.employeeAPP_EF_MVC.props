@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\employeeAPP_EF_MVC.props" />
+</Project>

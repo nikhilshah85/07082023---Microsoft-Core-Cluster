@@ -1,0 +1,105 @@
+
+
+Entity Framework with SQL Server for CRUD Operations
+
+	small brief about EF
+
+	based on ORM - Object relatinal mapping 
+
+        Backend		Frontend
+			(called as POCO - plain C# objects)
+	Database	DbContext
+	Table		Class
+	Columns		Properties
+	Constraints	DataAnnotations
+	Functions	Methods
+------------------------------------------------------------------------------------------------------------------
+	ASP.Net MVC application with EF Core 
+
+step 1: create a database, add a table
+	create database employeeDB
+
+use employeeDB
+
+create table employeeInfo
+(
+	empNo int primary key,
+	empName varchar(20),
+	empDesignation varchar(20),
+	empSalary int,
+	empIsPermenant bit
+)
+
+insert into employeeInfo values(101,'Sunil','Sales',5000,1)
+insert into employeeInfo values(102,'Maahi','HR',5000,1)
+insert into employeeInfo values(103,'Kartik','Sales',5000,0)
+insert into employeeInfo values(104,'Aman','Sales',5000,1)
+insert into employeeInfo values(105,'Chrish','HR',5000,1)
+insert into employeeInfo values(106,'Anjali','Sales',5000,0)
+
+
+step 2: Create a new ASP.net mvc application - employeeAPP_EF_MVC
+
+step 3: Application does not know anything about EF - we have to install nuget packages
+	below 4 nugets in sequence
+
+	Microsoft.EntityFrameworkCore.Tools
+	Microsoft.EntityFrameworkCore.Design
+	Microsoft.EntityFrameworkCore
+	Microsoft.EntityFrameworkCore.SqlServer
+
+step 4 : Download POCO classes
+		tools -> Nuget package manager -> Package manager console
+
+
+	Scaffold-DbContext "server=(localdb)\MSSQLLocalDB;database=employeeDB;integrated security=true" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\EF
+
+step 5 : Add MVC controller with actions useing EF
+	solution explorer -> right click on controller folder
+		Choose your table name for model option
+		Choose DBContext name for dbContext option
+			this classes got created from step 4 in Models\EF folder
+
+
+
+step 6 : By default controller will DI - (half di) - half we have to configure
+		we will not use half (remove it) as we do not know DI
+
+step 7 : from controller file, instatiate new object of DBContext	
+		 private readonly EmployeeDbContext _context = new EmployeeDbContext();
+
+	Comment the constructor (line 16, 17 and 18)
+
+step 8 : update layout page to display employee link
+	  <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="employee" asp-action="Index">Employee</a>
+                        </li>
+
+step 9 : Build the application - run the application and test the functionality
+
+
+
+
+
+
+	
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
