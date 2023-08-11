@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+			Project Day :
+
+			Topics : MVC, ADO.Net and Entity Framework
+
+			Project Description : 
+			1. Create a new MVC Application - BankingAPP
+			2. Create a new Database bankingProjectDB
+			3. Add below tables
+				branchInfo (brNo, brName, brCity)
+				AccountsInfo (accNo, accName, accBalance, accIsActive, accBranch (foreign key to branchInfo table)
+				TransactionInfo (trNo, fromAcc, ToAcc, Amount, trStatus)
+
+			4. In the MVC application, on the home page, create a good UI, with bank name, image and some message
+			5. Update the about page with contact no and email
+			6. Display the BranchInfo table, useing ADO.Net, only dispay the data, no need for insert, updaate and delete
+			7. Display the Accountsinfo, and perform CRUD operations on the same useing EF
+			8. Display the transactionInfo only display
+
+
+			All the best
+
+
+			
