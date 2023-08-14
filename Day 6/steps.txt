@@ -1,0 +1,22 @@
+step 1: created a new database, added a table with sample data
+step 2: created a new MVC application - employeeAPI
+step 3: added nuget packages for EF in application (4 packages for EF)
+step 4: downloaded poco classes with Scaffold-DbContext command
+step 5: right click on controller folder, add controller, choose API from left
+	choose api controller with action useing Entity Framework
+
+	choose table name as model
+	choose dbcontext file name as dbcontext 
+		this files got generated in step 4
+step 6:by default it will use DI - but we dont know what is DI
+	instantite new instance of dbcontext
+
+	 private readonly EmployeeDbContext _context = new EmployeeDbContext();
+
+	comment / remove constructor
+
+step 7: build the application and test the output on browser
+
+	https://localhost:9090/api/controllername
+
+	https://localhost:7111/api/employee/
