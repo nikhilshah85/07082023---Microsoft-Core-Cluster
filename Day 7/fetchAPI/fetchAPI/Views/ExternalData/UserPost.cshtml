@@ -1,0 +1,38 @@
+﻿
+
+<h1> User Post </h1>
+<button class="btn btn-primary" onclick="getUserPost()" >User Post</button>
+<table class="table table-bordered"></table>
+
+<script>
+    function getUserPost()
+    {
+        var url = "https://jsonplaceholder.typicode.com/posts";
+
+        fetch(url).then(reponseDataType => reponseDataType.json())
+                  .then(data =>{
+                    //  alert('Got Data - Success !!!');
+                     // console.log(data);
+                      //write code to display the data on on html
+
+                      for(var i=0;i<data.length;i++)
+                      {
+                        $("table").append("<tr>" +
+                         "<td>" + data[i].id + "</td>" +
+                         "<td>" + data[i].userId + "</td>" +
+                         "<td>" + data[i].title + "</td>" +
+                        "<td>" + data[i].body + "</td>" +
+                        
+                        
+                        + "</tr>")
+                      }
+                  })
+                  .catch(err =>{
+                        alert('Gor Error');
+                        console.log(err);
+                        //write code to display error
+                  })
+
+
+    }
+</script>

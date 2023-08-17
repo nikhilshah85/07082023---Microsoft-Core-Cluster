@@ -1,0 +1,14 @@
+Consume WebAPI in MVC application 
+
+we will use fetch api to consume the data 
+	1. fetch api is a standard by W3C and ECMA for make api calls
+	2. Is built in every modern browser
+	3. fetch api - allows to work with promises - returns a promisse which will make sure your end users will always get a 
+			response (success or error message) - rather than waiting
+	4. works as a try catch block 
+		here we have then and catch
+	
+	5. WebAPI are modern world web-services
+		webservices were XML based SOAP messages - which are quiety heavy - not suitable for mobile devises/slow 		internet
+		WebAPI are light weight, faster and JSON based
+	

@@ -1,0 +1,22 @@
+WebAPI can be consumed in 2 ways
+
+a. client side - fetch api - this is fastest but not safe
+b. server side - HttpClient - this is safest a little bit slower
+
+	both the apis (fetch and HttpClient) are a part of web standards
+
+
+
+steps for HttpClient calls (this api can also be used for desktop application) - fetch cannot be used there
+	
+1. create a new application - apicalls_httpclient
+2. we will make a call to - https://jsonplaceholder.typicode.com/comments
+	it has 5 properties coming 
+		postId
+		id
+		name
+		email
+		body
+3. create a new class in application - commentsDetails (anyname) and add 5 properties to it
+
+4. add a variable to capture the data based on output expected
