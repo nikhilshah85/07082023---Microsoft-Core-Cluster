@@ -1,0 +1,23 @@
+1. Dependency Injection 
+2. CORS - Cross origin resource shareing (how to allow users/client/other projects to 
+		make calls to our website and take the details)
+-----------------------------------------------------------
+
+	1. Create a new ASP.Net MVC  application (you know MVC design pattern)
+	2. Add Entity framework to the application (you know ORM design pattern)
+	3. Create a Database - airlinesManagement
+		table fligt details
+			fligntNo primary key
+			flightFrom 
+			fightTo
+			availableSeats
+			fare
+
+			add 5 records to the table
+
+	4. Create a WebAPI controller with EF in the application to give all the data and perform CRUD operations (other websites will want to display this data on their site as 			well)
+
+	5. Creaate a new MVC Controller with EF in the application to display all the 		data to customers
+
+-------------------
+	do not make any changes in the controller, run the application, read the error

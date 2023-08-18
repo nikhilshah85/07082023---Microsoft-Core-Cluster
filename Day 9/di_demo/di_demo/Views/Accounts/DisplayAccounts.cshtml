@@ -1,0 +1,16 @@
+﻿
+
+<h1> Account Details </h1>
+
+<table class="table table-bordered">
+    @foreach (var item in ViewBag.acc)
+    {
+        <tr>
+            <td> @item.accNo </td>
+            <td> @item.accName </td>
+            <td> @item.accType </td>
+            <td> @item.accBalance </td>
+            <td> @item.accIsActive </td>
+        </tr>
+    }
+</table>

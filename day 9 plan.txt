@@ -1,0 +1,16 @@
+Task :
+useing Httpclient make a call to 
+	https://jsonplaceholder.typicode.com/users
+
+
+	display below details
+
+	Name userName email city lat lng companyname companycatchphase
+
+
+Day 9 :
+
+1. Dependency Injection
+2. CORS
+
+make call to our own api
