@@ -1,0 +1,27 @@
+
+
+
+
+
+		CORS : Cross Origin Resource Shareing 
+
+
+		This is when 1 website - wants to fetch data/content from other site
+
+			eg. 
+			http://localhost:8989/home/api/employeedetails
+
+			http://localhost:7778/home/display/employee -- wants to get the data from above site and display employees in a table
+
+			it could be any contents - JSON data/ image / video streaming / header etc....
+
+
+
+			https://www.cognizant.com/employee/salarypayouts -- this is pulling data from our database, will list salary to be paid
+
+
+			https://www.hdfcbank.com/getsalarypayoutdetails -- get it from the above URl 
+
+
+			This will not be allowed by default - as per Web Standards, no domain/website/port can get the data from other site and 			display	 on others website - this are blocked by CORS 
+			

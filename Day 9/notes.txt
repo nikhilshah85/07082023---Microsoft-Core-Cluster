@@ -9,7 +9,6 @@
 			As a developer, we create lots of objects in application, but we never, 
 			1. write code to destroy them
 			2. clear memory
-
 			3. Never write Destructor
 			4. Never implement IDisposable 
 
@@ -18,9 +17,7 @@
 
 			Why ???
 
-
-
-			Why ?
+			
 			Because we are been told - GC - Garbage Collector will do it for us
 			but when ? - at a random time 
 
@@ -36,7 +33,7 @@
 
 		instead a new mechanism, design, idea got evolved for a framework where
 			Framework will create the object for you
-			Framework will destroy the object fo you
+			Framework will destroy the object for you
 			Framework will also take care of shareing the objects for you, you do not need to implement State management
 	
 		This feature is called Dependency Injection 

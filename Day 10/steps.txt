@@ -1,0 +1,52 @@
+1. from the code I shared please change the port no of API 
+2. Make a call and make sure you see above error - CORS
+
+let me know if any other error
+
+-------------
+let us configure cors
+1. We need to add Nuget package for the same
+	Microsoft.AspNetCore.Cors
+2. in program.cs -- add cors policy to allow access
+	we can decide which url to be accessed, which method to access
+
+	congifure the service
+
+	builder.Services.AddCors(policy =>
+{
+    policy.AddDefaultPolicy(defaultCORS =>
+    {
+        defaultCORS.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin(); 
+    });
+});
+
+3. Add CORS middlware
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://localhost:7122/employee/list
+
+clients will have their own application / technology to access the data from above url
+	(ASP.net MVC, Angular, React, Node etc....)
+
+-----------------------
+	craetea a new ASP.net mvc app and lets try to display data on the page
+

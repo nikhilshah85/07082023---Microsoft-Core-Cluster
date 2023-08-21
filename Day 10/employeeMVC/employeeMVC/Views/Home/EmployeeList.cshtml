@@ -1,0 +1,26 @@
+﻿<h1> CORS Demo </h1>
+
+
+<button class="btn btn-primary" onclick="getEmployees()">Show Employees</button>
+
+<ul></ul>
+
+<script>
+    function getEmployees()
+    {
+        var url = "https://localhost:7122/employee/list";
+
+        fetch(url).then(responseDataType => responseDataType.json())
+                  .then( data =>
+                  {
+                      for(var i=0;i<data.length;i++)
+                    $("ul").append("<li>" + data[i] + "</li>");
+                  
+                  })
+                  .catch(err =>{
+                           alert("Error");
+                  })
+
+
+    }
+</script>
