@@ -1,0 +1,21 @@
+				
+
+
+
+							Revision Day
+
+We will want to try to make a Post call - all this days we have made only get calls
+
+
+REvisit / Revision to all the major topics that we saw in last few days
+
+
+1. EF = Create a new WebAPI with Entity Framework on SQL Server (use the same database from yesterday)
+2. DI = to configure the above control
+3. CORS Configure CORS to allow access to other users
+4. API calls = create a new MVC application and make a Post call to above api - not get call 
+	use fetchAPi or HttpClient 
+
+---------------------------------------------------------------------------------------
+
+		Tomorrow : Advance SQL Server - Procedures - Functions and triggers

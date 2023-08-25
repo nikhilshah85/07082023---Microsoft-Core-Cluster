@@ -1,0 +1,28 @@
+Review of training
+
+1. MVC - role of MVC and type of web applications we create here
+	Role of MVC	
+	Models
+		InMemory Data
+		SQL Server 
+		Entity Framework
+	View
+		Action View
+		Partial Page
+		Layout view
+	Controller
+		MVC Controller - Empty
+		MVC Controller with actions useing Entity framework
+2. Entity Framework 
+	nugets which are needed to be added
+	commands
+	DB first approach (we did not code first approach as it is covered in EF training)
+
+3. WebAPI - this is all above data
+	a. create a WebAPI solution 
+		Attributes
+		Routing
+	b. consume a WebAPI data
+		client side - ?? fetch
+		server side - ?? HttpClient 
+	Swagger for testing webapi
